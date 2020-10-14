@@ -1,0 +1,14 @@
+{
+  "name": "lambda_copy_objects_to_different_bucket",
+  "version": "1.0.0",
+  "description": "Copy new objects from one bucket to another",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yossi Silberhaft",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.771.0"
+  }
+}
