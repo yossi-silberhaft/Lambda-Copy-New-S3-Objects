@@ -2,7 +2,7 @@ let AWS = require('aws-sdk')
 
 let s3 = new AWS.S3()
 exports.handler = async (event, context, callback) => {
-    const prefix_path = process.env.PREFIX_PATH
+    const prefix_path = process.env.PREFIX_PATH ? process.env.PREFIX_PATH : ''
     const destBucket = process.env.DEST_BUCKET
 
     const srcBucket = event.Records[0].s3.bucket.name
